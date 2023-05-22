@@ -9,6 +9,8 @@ app.get("",(req,res)=>{
 app.get("/about",(req,res)=>{
     res.send('<h1>This is About Page.</h1><a href="/">Go to Home</a>');
 })
+
+
 app.get("*",(req,res)=>{
     res.sendFile(`${dirname}/404.html`)
 })
