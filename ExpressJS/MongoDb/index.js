@@ -16,7 +16,6 @@ connectdb().then((data)=>{
 // })
 
 
-
 //upadate data
 // connectdb().then((data)=>{
 //     data.updateMany({"class":"D"},{$set:{"class":"C"}})
