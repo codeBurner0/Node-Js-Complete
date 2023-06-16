@@ -1,27 +1,18 @@
 const express=require('express')
 const app=express();
+const reqFilter=require('./middleware')
+const route=express.Router()
 
-
-const reqFilter=(req,res,next)=>{
-    if(!req.query.age){
-        res.send("Enter Your Age ");
-    }
-    else if(req.query.age<18){
-        res.send("You are not allowed to enter, your age is not 18+")
-    }else{
-        next();
-    }
-    
-}
-
-
-app.get('/',reqFilter,(req,res)=>{
+route.use(reqFilter)
+app.get('/',(req,res)=>{
     res.send("Welcom to home Screen");
 })
-app.get('/user',(req,res)=>{
+route.get('/user',(req,res)=>{
     res.send("Welcom to user Screen");
 
 })
+
+app.use('/',route)
 app.listen(5000,()=>[
     console.log("server is started")
 ])
