@@ -10,6 +10,25 @@ connectdb().then((data)=>{
 })
 
 //insert data
+
+// connectdb().then((data)=>{
+//     data.insertMany([{"name":"Manvi","sec":"D"},{"name":"Vidisha","sec":"D"}])
+// })
+
+
+
+//upadate data
+// connectdb().then((data)=>{
+//     data.updateMany({"class":"D"},{$set:{"class":"C"}})
+// })
+
+
+//delete data
 connectdb().then((data)=>{
-    data.insertMany([{"name":"Manvi","sec":"D"},{"name":"Vidisha","sec":"D"}])
+    let res=data.deleteOne({"name":"Anuj"})
+    if(res.acknowledgement){
+        console.log("record deleted")
+    }else{
+        console.log("record not deleted")
+    }
 })
