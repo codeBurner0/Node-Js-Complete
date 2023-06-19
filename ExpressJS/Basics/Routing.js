@@ -12,6 +12,9 @@ app.get("/about",(req,res)=>{
 app.get("*",(req,res)=>{
     res.sendFile(`${dirname}/404.html`)
 })
+
+
+
 app.listen(3000);
 
 //updated
