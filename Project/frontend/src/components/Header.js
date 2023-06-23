@@ -14,10 +14,13 @@ const Header=()=>{
                     <Link to="/update">Update Products</Link>
                 </li>
                 <li>
-                    <Link to="/logout">Lorout</Link>
+                    <Link to="/logout">Logout</Link>
                 </li>
                 <li>
                     <Link to="/profile">Profile</Link>
+                </li>
+                <li>
+                    <Link to="/signup">Signup</Link>
                 </li>
             </ul>
         </div>

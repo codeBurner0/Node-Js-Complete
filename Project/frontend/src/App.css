@@ -1,10 +1,68 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+body{
+  background-color: rgba(162, 167, 154, 0.791);
+}
+
 .list{
   list-style-type: none;
 }
+.list{
+  background-color: #2c5245;
+  padding: 5px;
+}
 .list li{
   display: inline-block;
+  padding: 10px;
 }
 
-.list  Link{
+a{
   text-decoration: none;
+  color: white;
+  font-weight: 900;
 }
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  background-color: #2c5245;
+  padding: 5px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+/* signup page */
+.input{
+  display: grid;
+  grid-template-columns: 1;
+  text-align: center;
+  justify-content: center;
+}
+.input input{
+  width: 100%;
+  padding: 7px;
+  margin: 5px;
+  border:2px solid #2c5245;
+  border-radius: 8px;
+}
+
+input:hover{
+  border:2px solid #2c5245;
+  background-color: rgba(162, 167, 154, 0.791);
+}
+
+
+.signup{
+  width: 100%;
+  padding: ;
+}
+
+/* .reg{
+  width: 100%;
+  text-align: center;
+  padding-bottom: 20px;
+} */
