@@ -34,20 +34,22 @@ a{
   text-align: center;
   color: white;
 }
-
-/* signup page */
 .input{
   display: grid;
   grid-template-columns: 1;
-  text-align: center;
-  justify-content: center;
+  position: absolute;
+  width: 300px;
+  right: 50%;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%,-50%);
+  
 }
 .input input{
-  width: 100%;
-  padding: 7px;
-  margin: 5px;
   border:2px solid #2c5245;
   border-radius: 8px;
+  padding: 10px;
+  margin: 10px;
 }
 
 input:hover{
@@ -56,13 +58,23 @@ input:hover{
 }
 
 
-.signup{
-  width: 100%;
-  padding: ;
-}
 
-/* .reg{
-  width: 100%;
+.reg{
+  padding-left: 55px;
+}
+.submit{
+  width: 110px;
+  padding: 10px;
+  margin-left: 100px;
   text-align: center;
-  padding-bottom: 20px;
-} */
+  color: #2c5245;
+  font-size: 25px;
+  font-weight: 900;
+  font-family: monospace;
+  border: 5px solid #2c5245;
+  border-radius: 10px;
+}
+ .submit:hover{
+  animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+  background-color: #bccbc6;
+}
