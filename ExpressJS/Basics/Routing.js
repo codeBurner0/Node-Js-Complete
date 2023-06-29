@@ -1,6 +1,6 @@
 const express=require('express')
 const app=express();
-const path=require('path')
+const path=require('path');
 const dirname=path.join(__dirname,"../public")
 console.log(dirname)
 app.get("",(req,res)=>{
@@ -19,4 +19,3 @@ app.get("*",(req,res)=>{
 app.listen(3000);
 
 //updated
-
